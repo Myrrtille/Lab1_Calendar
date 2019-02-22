@@ -1,0 +1,46 @@
+﻿<ContentControl x:Class="Lab1.Views.MainView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lab1.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions >
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="15"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center">Date of your birth: </Label>
+        <DatePicker Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Padding="30,3,30,0" SelectedDate="{Binding Date, UpdateSourceTrigger=PropertyChanged, Delay=5}"></DatePicker>
+        
+        <Button Grid.Column="1" Grid.Row="4" Margin="80,2,80,2" Command="{Binding ConfirmCommand}">Confirm</Button>
+
+        <Label Grid.Column="1" Grid.Row="6" HorizontalAlignment="Left" Padding="20,0,0,0">Your age: </Label>
+        <TextBlock Grid.Column="1" Grid.Row="6" HorizontalAlignment="Center" Padding="30,0,30,0" Text="{Binding AgeValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,Delay=5}"></TextBlock>
+
+        <Label Grid.Column="1" Grid.Row="7" HorizontalAlignment="Left" Padding="20,0,0,0">West astrology sign: </Label>
+        <TextBlock Grid.Column="1" Grid.Row="7" HorizontalAlignment="Right" Padding="60,0,30,0" Margin="0,0,20,0" Text="{Binding WestAstrologySign, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,Delay=5}"></TextBlock>
+
+        <Label Grid.Column="1" Grid.Row="8" HorizontalAlignment="Left" Padding="20,0,0,0">Chinese astrology sign:</Label>
+        <TextBlock Grid.Column="1" Grid.Row="8" HorizontalAlignment="Right" Padding="40,0,30,0" Margin="0,0,20,0" Text="{Binding ChineseAstrologySign, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,Delay=5}"></TextBlock>
+
+    </Grid>
+
+</ContentControl>
