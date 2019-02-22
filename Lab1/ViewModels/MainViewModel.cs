@@ -183,7 +183,8 @@ namespace Lab1.ViewModels
             {
                 Age = -1;
                 Date = _oldDate;
-                MessageBox.Show("Exception! Not born yet.");
+                
+                MessageBox.Show("Not born yet.", "Error!",MessageBoxButton.OK,MessageBoxImage.Error);
                 OnPropertyChanged();
                 AgeValue = "";
                 return;
@@ -192,7 +193,7 @@ namespace Lab1.ViewModels
             {
                 Age = -1;
                 Date = _oldDate;
-                MessageBox.Show("Exception! Too old, 135 - max age.");
+                MessageBox.Show("Too old, 135 - max age.", "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
                 OnPropertyChanged();
                 AgeValue = "";
                 return;
