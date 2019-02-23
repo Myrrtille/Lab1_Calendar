@@ -23,7 +23,7 @@ namespace Lab1.ViewModels
         private string _chineseAstrologySign;
 
         #region Signs
-        private string[] _westSignsArr =
+        private readonly string[] _westSignsArr =
         {
             "Aquarius", //0// Jan 20 - Feb 18 
             "Pisces", //1// Feb 19 - March 20 
@@ -39,7 +39,7 @@ namespace Lab1.ViewModels
             "Capricorn" //11// Dec 22 - Jan 19    
         };
 
-        private string[] _chineseSignArr =
+        private readonly string[] _chineseSignArr =
         {
             "Monkey", // 2016,2004
             "Rooster", // 2017,2005,1993
