@@ -36,10 +36,10 @@
         <TextBlock Grid.Column="1" Grid.Row="6" HorizontalAlignment="Center" Padding="30,0,30,0" Text="{Binding AgeValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,Delay=5}"></TextBlock>
 
         <Label Grid.Column="1" Grid.Row="7" HorizontalAlignment="Left" Padding="20,0,0,0">West astrology sign: </Label>
-        <TextBlock Grid.Column="1" Grid.Row="7" HorizontalAlignment="Right" Padding="60,0,30,0" Margin="0,0,20,0" Text="{Binding WestAstrologySign, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,Delay=5}"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="7" HorizontalAlignment="Right" Padding="60,0,30,0" Margin="0,0,20,0" Text="{Binding WestAstrologySign, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
 
         <Label Grid.Column="1" Grid.Row="8" HorizontalAlignment="Left" Padding="20,0,0,0">Chinese astrology sign:</Label>
-        <TextBlock Grid.Column="1" Grid.Row="8" HorizontalAlignment="Right" Padding="40,0,30,0" Margin="0,0,20,0" Text="{Binding ChineseAstrologySign, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,Delay=5}"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="8" HorizontalAlignment="Right" Padding="40,0,30,0" Margin="0,0,20,0" Text="{Binding ChineseAstrologySign, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
 
     </Grid>
 
